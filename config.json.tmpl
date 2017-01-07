@@ -1,0 +1,8 @@
+{
+    "server": "{{ default .Env.SERVER "0.0.0.0" }}",
+    "server_port": "{{ default .Env.SERVER_PORT "3389" }}",
+    "local_port": "{{ default .Env.LOCAL_PORT "1080" }}",
+    "password": "{{ default .Env.PASSWORD "thisisscrect" }}",
+    "method": "{{ default .Env.METHOD "rc4-md5" }}",
+    "timeout": {{ default .Env.TIMEOUT "600" }}
+}
